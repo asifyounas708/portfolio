@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Asif Younas | Flutter Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
             --primary: #4361ee;
@@ -49,18 +51,25 @@
             padding: 60px 0;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             margin-bottom: 1rem;
             font-weight: 700;
             line-height: 1.2;
         }
 
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-        h2 { 
-            font-size: clamp(1.75rem, 4vw, 2.8rem); 
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.8rem);
             position: relative;
             display: inline-block;
         }
+
         h2::after {
             content: '';
             position: absolute;
@@ -71,8 +80,14 @@
             background: var(--secondary);
             border-radius: 2px;
         }
-        h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
-        h4 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+        }
+
+        h4 {
+            font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+        }
 
         p {
             margin-bottom: 1rem;
@@ -788,6 +803,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -798,6 +814,7 @@
                 opacity: 0;
                 transform: translateY(-20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -809,19 +826,19 @@
             section {
                 padding: 80px 0;
             }
-            
+
             .hero-btns {
                 gap: 20px;
             }
-            
+
             .contact-info {
                 gap: 25px;
             }
-            
+
             .skills-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
+
             .projects-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -832,20 +849,20 @@
                 flex-direction: row;
                 align-items: flex-start;
             }
-            
+
             .about-img {
                 max-width: 350px;
                 margin-right: 40px;
             }
-            
+
             .about-text {
                 flex: 1;
             }
-            
+
             .skills-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-            
+
             .nav-links {
                 position: static;
                 width: auto;
@@ -853,7 +870,7 @@
                 background: transparent;
                 flex-direction: row;
             }
-            
+
             .hamburger {
                 display: none;
             }
@@ -863,11 +880,11 @@
             section {
                 padding: 100px 0;
             }
-            
+
             .projects-grid {
                 grid-template-columns: repeat(3, 1fr);
             }
-            
+
             .about-img {
                 max-width: 400px;
             }
@@ -877,7 +894,7 @@
             .container {
                 padding: 0;
             }
-            
+
             .projects-grid {
                 gap: 30px;
             }
@@ -900,29 +917,29 @@
                 transition: all 0.5s ease;
                 overflow-y: auto;
             }
-            
+
             .nav-links.active {
                 left: 0;
             }
-            
+
             .nav-links a {
                 font-size: 1.1rem;
                 padding: 10px 0;
             }
-            
+
             .hamburger {
                 display: block;
             }
-            
+
             .hero {
                 padding: 100px 0 60px;
             }
-            
+
             .experience-item h3 {
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
             .experience-item.remote::after {
                 top: 10px;
                 right: -35px;
@@ -932,6 +949,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav id="navbar">
@@ -956,7 +974,8 @@
             <div class="hero-content">
                 <h1>Muhammad Asif Younas</h1>
                 <h2>Flutter Developer</h2>
-                <p>Building high-performance, cross-platform mobile applications with 3.5+ years of professional experience</p>
+                <p>Building high-performance, cross-platform mobile applications with 3.5+ years of professional
+                    experience</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
@@ -981,17 +1000,20 @@
                 <h2>About Me</h2>
                 <p>Get to know me and my skills</p>
             </div>
-            
+
             <div class="about-content">
-                <div class="about-img">
-                    <img src="asif.jpeg" alt="Muhammad Asif Younas" style="margin-top: 67px;">
+                <div class="about-img" style="margin-top: 60px;">
+                    <img src="asif.jpeg" alt="Muhammad Asif Younas">
                 </div>
-                
+
                 <div class="about-text">
                     <h3>Flutter Developer</h3>
-                    <p>I'm a passionate Flutter Developer with over 3.5 years of experience in creating beautiful, high-performance mobile applications. I specialize in building cross-platform solutions that deliver exceptional user experiences.</p>
-                    <p>My expertise includes state management solutions like Bloc, GetX, and Provider, API integration, Firebase services, and implementing clean architecture principles.</p>
-                    
+                    <p>I'm a passionate Flutter Developer with over 3.5 years of experience in creating beautiful,
+                        high-performance mobile applications. I specialize in building cross-platform solutions that
+                        deliver exceptional user experiences.</p>
+                    <p>My expertise includes state management solutions like Bloc, GetX, and Provider, API integration,
+                        Firebase services, and implementing clean architecture principles.</p>
+
                     <div class="skills-grid">
                         <div class="skill-category">
                             <h3><i class="fas fa-code"></i> Languages</h3>
@@ -1002,7 +1024,7 @@
                                 <li>C#</li>
                             </ul>
                         </div>
-                        
+
                         <div class="skill-category">
                             <h3><i class="fas fa-cubes"></i> Frameworks</h3>
                             <ul>
@@ -1011,7 +1033,7 @@
                                 <li>Laravel</li>
                             </ul>
                         </div>
-                        
+
                         <div class="skill-category">
                             <h3><i class="fas fa-tools"></i> Tools & Tech</h3>
                             <ul>
@@ -1036,7 +1058,7 @@
                 <h2>My Experience</h2>
                 <p>Where I've worked</p>
             </div>
-            
+
             <div class="experience-item">
                 <h3>Cyphersol Technology – Pakistan</h3>
                 <span class="duration">2022–Present</span>
@@ -1044,14 +1066,15 @@
                     <li>Designed and implemented efficient, maintainable logical structures in Flutter</li>
                     <li>Applied Clean Architecture principles for scalability and maintainability</li>
                     <li>Integrated Third-Party APIs with robust authentication and error handling</li>
-                    <li>Implemented Firebase services including authentication, real-time database, and push notifications</li>
+                    <li>Implemented Firebase services including authentication, real-time database, and push
+                        notifications</li>
                     <li>Managed state using Bloc, GetX and Provider</li>
                     <li>Coordinated app store deployments and updates</li>
                     <li>Conducted code reviews, testing, debugging, and troubleshooting</li>
                     <li>Used Git and GitHub for version control and collaboration</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item remote">
                 <h3>Kaswa Soft – Pakistan</h3>
                 <span class="duration">Remote</span>
@@ -1061,7 +1084,7 @@
                     <li>Worked on projects across various domains including healthcare and e-commerce</li>
                 </ul>
             </div>
-            
+
             <div class="experience-item remote">
                 <h3>Netbot Technology – Nigeria</h3>
                 <span class="duration">Remote</span>
@@ -1081,7 +1104,7 @@
                 <h2>My Projects</h2>
                 <p>Some of my recent work</p>
             </div>
-            
+
             <div class="projects-grid">
                 <!-- Emjay Global -->
                 <div class="project-card">
@@ -1090,7 +1113,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Emjay Global</h3>
-                        <p>Technology solution for a shipping company to streamline operations and improve user experience.</p>
+                        <p>Technology solution for a shipping company to streamline operations and improve user
+                            experience.</p>
                         <div class="project-tags">
                             <span>Flutter</span>
                             <span>Logistics</span>
@@ -1098,7 +1122,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Medical Expert -->
                 <div class="project-card">
                     <div class="project-image" style="background: #f72585;">
@@ -1106,7 +1130,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Medical Expert</h3>
-                        <p>Online platform with video calling and appointment management for virtual medical consultations.</p>
+                        <p>Online platform with video calling and appointment management for virtual medical
+                            consultations.</p>
                         <div class="project-tags">
                             <span>Healthcare</span>
                             <span>Video Calling</span>
@@ -1114,7 +1139,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Mag Holding -->
                 <div class="project-card">
                     <div class="project-image" style="background: #4cc9f0;">
@@ -1130,7 +1155,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- MPEW -->
                 <div class="project-card">
                     <div class="project-image" style="background: #7209b7;">
@@ -1138,7 +1163,8 @@
                     </div>
                     <div class="project-content">
                         <h3>MPEW</h3>
-                        <p>Application to securely store phone contacts, call logs, and messages with backup options.</p>
+                        <p>Application to securely store phone contacts, call logs, and messages with backup options.
+                        </p>
                         <div class="project-tags">
                             <span>Security</span>
                             <span>Storage</span>
@@ -1146,7 +1172,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Hepbilirim -->
                 <div class="project-card">
                     <div class="project-image" style="background: #4895ef;">
@@ -1154,7 +1180,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Hepbilirim</h3>
-                        <p>Online quiz application with single and multiplayer modes for user engagement and knowledge testing.</p>
+                        <p>Online quiz application with single and multiplayer modes for user engagement and knowledge
+                            testing.</p>
                         <div class="project-tags">
                             <span>Gaming</span>
                             <span>Education</span>
@@ -1162,7 +1189,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- RimTrans -->
                 <div class="project-card">
                     <div class="project-image" style="background: #3a0ca3;">
@@ -1178,7 +1205,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- MeriWakalat -->
                 <div class="project-card">
                     <div class="project-image" style="background: #b5179e;">
@@ -1194,7 +1221,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Quick Chat -->
                 <div class="project-card">
                     <div class="project-image" style="background: #ef233c;">
@@ -1210,7 +1237,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Media Routing Application -->
                 <div class="project-card">
                     <div class="project-image" style="background: #f8961e;">
@@ -1218,7 +1245,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Media Routing Application</h3>
-                        <p>Managing multiple routes for drivers and creating optimal routes between multiple locations.</p>
+                        <p>Managing multiple routes for drivers and creating optimal routes between multiple locations.
+                        </p>
                         <div class="project-tags">
                             <span>Logistics</span>
                             <span>Routing</span>
@@ -1226,7 +1254,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Top Coaches -->
                 <div class="project-card">
                     <div class="project-image" style="background: #2ec4b6;">
@@ -1242,7 +1270,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- FuelBook -->
                 <div class="project-card">
                     <div class="project-image" style="background: #011627;">
@@ -1259,9 +1287,10 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="codecanyon-note">
-                <p>Collaborated on various CodeCanyon projects, upgrading features and functionalities in over 30 applications to enhance user experience and optimize performance.</p>
+                <p>Collaborated on various CodeCanyon projects, upgrading features and functionalities in over 30
+                    applications to enhance user experience and optimize performance.</p>
             </div>
         </div>
     </section>
@@ -1434,4 +1463,5 @@
         });
     </script>
 </body>
+
 </html>
