@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%234361ee'/><text x='50' y='65' font-family='Poppins, sans-serif' font-size='50' font-weight='600' fill='white' text-anchor='middle'>AY</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='10' fill='%234361ee'/><text x='50' y='65' font-family='Poppins, sans-serif' font-size='50' font-weight='600' fill='white' text-anchor='middle'>AY</text></svg>">
     <title>Muhammad Asif Younas | Flutter Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -948,6 +949,47 @@
                 font-size: 0.6rem;
                 padding: 3px 25px;
             }
+
+            .project-card {
+                position: relative;
+            }
+
+            .play-badge {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .play-badge img {
+                max-width: 150px;
+                height: auto;
+            }
+
+            .project-card a {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+
+            .store-badges {
+                display: flex;
+               
+                margin-top: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .store-badges img {
+                height: 40px;
+                width: auto;
+                max-width: 135px;
+            }
+
+            @media (max-width: 480px) {
+                .store-badges {
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
         }
     </style>
 </head>
@@ -981,7 +1023,7 @@
                     experience</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="#contact" class="btn btn-outline" style="color: white;">Contact Me</a>
                 </div>
                 <div class="contact-info">
                     <span><i class="fas fa-map-marker-alt"></i> Multan Punjab, Pakistan</span>
@@ -1148,18 +1190,25 @@
 
                 <!-- Mag Holding -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #4cc9f0;">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>MAG Ventures</h3>
-                        <p>Investment platform with different currencies like BTC, TRX etc.</p>
-                        <div class="project-tags">
-                            <span>Finance</span>
-                            <span>Crypto</span>
-                            <span>Bloc</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.mag.holdings" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-image" style="background: #4cc9f0;">
+                            <i class="fas fa-coins"></i>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <h3>MAG Ventures</h3>
+                            <p>Investment platform with different currencies like BTC, TRX etc.</p>
+                            <div class="project-tags">
+                                <span>Finance</span>
+                                <span>Crypto</span>
+                                <span>Bloc</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- MPEW -->
@@ -1180,6 +1229,7 @@
                 </div>
 
                 <!-- Hepbilirim -->
+
                 <div class="project-card">
                     <div class="project-image" style="background: #4895ef;">
                         <i class="fas fa-gamepad"></i>
@@ -1192,6 +1242,18 @@
                             <span>Gaming</span>
                             <span>Education</span>
                             <span>GetX</span>
+                        </div>
+                        <div class="store-badges">
+                            <a href="https://play.google.com/store/apps/details?id=com.hepbilirim.hepbilirim"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="135">
+                            </a>
+                            <a href="https://apps.apple.com/fi/app/hepbilirim-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6480512569"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store" width="135">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1214,18 +1276,25 @@
 
                 <!-- MeriWakalat -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #b5179e;">
-                        <i class="fas fa-gavel"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>MeriWakalat</h3>
-                        <p>Online platform with features to facilitate legal consultations.</p>
-                        <div class="project-tags">
-                            <span>Legal</span>
-                            <span>Consultation</span>
-                            <span>Flutter</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.meriwakalat.meriwakalat" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-image" style="background: #b5179e;">
+                            <i class="fas fa-gavel"></i>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <h3>MeriWakalat</h3>
+                            <p>Online platform with features to facilitate legal consultations.</p>
+                            <div class="project-tags">
+                                <span>Legal</span>
+                                <span>Consultation</span>
+                                <span>Flutter</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- Quick Chat -->
@@ -1263,34 +1332,48 @@
 
                 <!-- Top Coaches -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #2ec4b6;">
-                        <i class="fas fa-running"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Top Coaches</h3>
-                        <p>Managing different types of teams based on training programs.</p>
-                        <div class="project-tags">
-                            <span>Sports</span>
-                            <span>Management</span>
-                            <span>Training</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.top.coaches" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-image" style="background: #2ec4b6;">
+                            <i class="fas fa-running"></i>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <h3>Top Coaches</h3>
+                            <p>Managing different types of teams based on training programs.</p>
+                            <div class="project-tags">
+                                <span>Sports</span>
+                                <span>Management</span>
+                                <span>Training</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- FuelBook -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #011627;">
-                        <i class="fas fa-gas-pump"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>FuelBook</h3>
-                        <p>Online pump and wallet management system for fuel station operations.</p>
-                        <div class="project-tags">
-                            <span>Fuel</span>
-                            <span>Management</span>
-                            <span>Wallet</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.petrolpump.app.petrolpump"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="project-image" style="background: #011627;">
+                            <i class="fas fa-gas-pump"></i>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <h3>FuelBook</h3>
+                            <p>Online pump and wallet management system for fuel station operations.</p>
+                            <div class="project-tags">
+                                <span>Fuel</span>
+                                <span>Management</span>
+                                <span>Wallet</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -1300,6 +1383,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Education Section -->
     <section id="education">
