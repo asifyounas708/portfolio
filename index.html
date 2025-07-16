@@ -972,7 +972,7 @@
 
             .store-badges {
                 display: flex;
-               
+
                 margin-top: 10px;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -989,6 +989,63 @@
                     flex-direction: column;
                     align-items: center;
                 }
+            }
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            background: var(--light);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .project-image {
+            height: 200px !important;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .project-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+        }
+
+        .play-badge img,
+        .store-badges img {
+            width: 135px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        @media (max-width: 480px) {
+            .project-content {
+                padding: 20px;
+            }
+
+            .project-image {
+                height: 160px !important;
             }
         }
     </style>
@@ -1145,7 +1202,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <div class="section-title">
@@ -1154,39 +1210,6 @@
             </div>
 
             <div class="projects-grid">
-                <!-- Emjay Global -->
-                <div class="project-card">
-                    <div class="project-image" style="background: #4361ee;">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Emjay Global</h3>
-                        <p>Technology solution for a shipping company to streamline operations and improve user
-                            experience.</p>
-                        <div class="project-tags">
-                            <span>Flutter</span>
-                            <span>Logistics</span>
-                            <span>API Integration</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Medical Expert -->
-                <div class="project-card">
-                    <div class="project-image" style="background: #f72585;">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Medical Expert</h3>
-                        <p>Online platform with video calling and appointment management for virtual medical
-                            consultations.</p>
-                        <div class="project-tags">
-                            <span>Healthcare</span>
-                            <span>Video Calling</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Mag Holding -->
                 <div class="project-card">
@@ -1211,25 +1234,63 @@
                     </a>
                 </div>
 
-                <!-- MPEW -->
+                <!-- RimTrans -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #7209b7;">
-                        <i class="fas fa-mobile-alt"></i>
+                    <div class="project-image" style="background: #3a0ca3;">
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <div class="project-content">
-                        <h3>MPEW</h3>
-                        <p>Application to securely store phone contacts, call logs, and messages with backup options.
-                        </p>
+                        <h3>RimTrans</h3>
+                        <p>Online banking transaction management system for secure financial transactions.</p>
                         <div class="project-tags">
+                            <span>Finance</span>
+                            <span>Banking</span>
                             <span>Security</span>
-                            <span>Storage</span>
-                            <span>SQLite</span>
+                        </div>
+                        <div class="store-badges">
+                            <a href="https://play.google.com/store/apps/details?id=com.rimtrans.rimtrans&hl=en"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" class="store-badge">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/rimtrans/id6499212409" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store" class="store-badge">
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Cosmostore -->
+                <div class="project-card">
+                    <div class="project-image" style="background: #ff6b6b;">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cosmo Store</h3>
+                        <p>Beauty product e-commerce application for makeup items and accessories with seamless shopping
+                            experience.</p>
+                        <div class="project-tags">
+                            <span>E-commerce</span>
+                            <span>Beauty</span>
+                            <span>Flutter</span>
+                        </div>
+                        <div class="store-badges">
+                            <a href="https://play.google.com/store/apps/details?id=com.cosmoprofe.userapp"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" class="store-badge">
+                            </a>
+                            <a href="https://apps.apple.com/us/app/cosmo-store/id6466153619" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                                    alt="Download on the App Store" class="store-badge">
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Hepbilirim -->
-
                 <div class="project-card">
                     <div class="project-image" style="background: #4895ef;">
                         <i class="fas fa-gamepad"></i>
@@ -1247,31 +1308,37 @@
                             <a href="https://play.google.com/store/apps/details?id=com.hepbilirim.hepbilirim"
                                 target="_blank" rel="noopener noreferrer">
                                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                                    alt="Get it on Google Play" width="135">
+                                    alt="Get it on Google Play" class="store-badge">
                             </a>
                             <a href="https://apps.apple.com/fi/app/hepbilirim-bilgi-yar%C4%B1%C5%9Fmas%C4%B1/id6480512569"
                                 target="_blank" rel="noopener noreferrer">
                                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                                    alt="Download on the App Store" width="135">
+                                    alt="Download on the App Store" class="store-badge">
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <!-- RimTrans -->
+                <!-- FuelBook -->
                 <div class="project-card">
-                    <div class="project-image" style="background: #3a0ca3;">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>RimTrans</h3>
-                        <p>Online banking transaction management system for secure financial transactions.</p>
-                        <div class="project-tags">
-                            <span>Finance</span>
-                            <span>Banking</span>
-                            <span>Security</span>
+                    <a href="https://play.google.com/store/apps/details?id=com.petrolpump.app.petrolpump"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="project-image" style="background: #011627;">
+                            <i class="fas fa-gas-pump"></i>
                         </div>
-                    </div>
+                        <div class="project-content">
+                            <h3>FuelBook</h3>
+                            <p>Online pump and wallet management system for fuel station operations.</p>
+                            <div class="project-tags">
+                                <span>Fuel</span>
+                                <span>Management</span>
+                                <span>Wallet</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <!-- MeriWakalat -->
@@ -1296,6 +1363,90 @@
                         </div>
                     </a>
                 </div>
+
+                <!-- Top Coaches -->
+                <div class="project-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.top.coaches" target="_blank"
+                        rel="noopener noreferrer">
+                        <div class="project-image" style="background: #2ec4b6;">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Top Coaches</h3>
+                            <p>Managing different types of teams based on training programs.</p>
+                            <div class="project-tags">
+                                <span>Sports</span>
+                                <span>Management</span>
+                                <span>Training</span>
+                            </div>
+                            <div class="play-badge">
+                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                                    alt="Get it on Google Play" width="150">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <!-- Emjay Global -->
+                <div class="project-card">
+                    <div class="project-image" style="background: #4361ee;">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Emjay Global</h3>
+                        <p>Technology solution for a shipping company to streamline operations and improve user
+                            experience.
+                        </p>
+                        <div class="project-tags">
+                            <span>Flutter</span>
+                            <span>Logistics</span>
+                            <span>API Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical Expert -->
+                <div class="project-card">
+                    <div class="project-image" style="background: #f72585;">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Medical Expert</h3>
+                        <p>Online platform with video calling and appointment management for virtual medical
+                            consultations.
+                        </p>
+                        <div class="project-tags">
+                            <span>Healthcare</span>
+                            <span>Video Calling</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- MPEW -->
+                <div class="project-card">
+                    <div class="project-image" style="background: #7209b7;">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>MPEW</h3>
+                        <p>Application to securely store phone contacts, call logs, and messages with backup options.
+                        </p>
+                        <div class="project-tags">
+                            <span>Security</span>
+                            <span>Storage</span>
+                            <span>SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
 
                 <!-- Quick Chat -->
                 <div class="project-card">
@@ -1330,51 +1481,9 @@
                     </div>
                 </div>
 
-                <!-- Top Coaches -->
-                <div class="project-card">
-                    <a href="https://play.google.com/store/apps/details?id=com.top.coaches" target="_blank"
-                        rel="noopener noreferrer">
-                        <div class="project-image" style="background: #2ec4b6;">
-                            <i class="fas fa-running"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Top Coaches</h3>
-                            <p>Managing different types of teams based on training programs.</p>
-                            <div class="project-tags">
-                                <span>Sports</span>
-                                <span>Management</span>
-                                <span>Training</span>
-                            </div>
-                            <div class="play-badge">
-                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                                    alt="Get it on Google Play" width="150">
-                            </div>
-                        </div>
-                    </a>
-                </div>
 
-                <!-- FuelBook -->
-                <div class="project-card">
-                    <a href="https://play.google.com/store/apps/details?id=com.petrolpump.app.petrolpump"
-                        target="_blank" rel="noopener noreferrer">
-                        <div class="project-image" style="background: #011627;">
-                            <i class="fas fa-gas-pump"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>FuelBook</h3>
-                            <p>Online pump and wallet management system for fuel station operations.</p>
-                            <div class="project-tags">
-                                <span>Fuel</span>
-                                <span>Management</span>
-                                <span>Wallet</span>
-                            </div>
-                            <div class="play-badge">
-                                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                                    alt="Get it on Google Play" width="150">
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
+
             </div>
 
             <div class="codecanyon-note">
